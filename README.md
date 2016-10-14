@@ -1,11 +1,11 @@
-#clims CLI + Materia + Store
+#clims CLI + Material + Store
 * npm i -g angular-cli
 * cd <code-dir>
 * ng new clims
 * cd clims
 * npm i --save hammerjs
-* npm - --save-dev @types/hammerjs
-* npm i --save 
+* npm i --save-dev @types/hammerjs
+* npm i --save @angular2-material/core
     @angular2-material/button
     @angular2-material/button-toggle
     @angular2-material/card
@@ -24,3 +24,13 @@
     @angular2-material/tabs
     @angular2-material/toolbar
     @angular2-material/tooltip
+* check material works
+    * create **MaterialModule** (***/app/shared/material.module.ts***)
+    * import **MaterialModule** into ***/app/app.module.ts*** and add it to the imports: []
+    
+* npm i --save @ngrx/core 
+    @ngrx/store 
+    @ngrx/store-devtools 
+    @ngrx/store-log-monitor
+* xx
+    
