@@ -2,13 +2,18 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { MaterialModule } from './shared';
+
 
 describe('App: Clims', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+          AppComponent
       ],
+      imports: [
+          MaterialModule
+      ]
     });
   });
 
@@ -24,10 +29,10 @@ describe('App: Clims', () => {
     expect(app.title).toEqual('app works!');
   }));
 
-  it('should render title in a h1 tag', async(() => {
+  it('should render title in a md-toolbar tag', async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     let compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
+    expect(compiled.querySelector('md-toolbar').textContent).toContain('app works!');
   }));
 });

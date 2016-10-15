@@ -32,5 +32,8 @@
     @ngrx/store 
     @ngrx/store-devtools 
     @ngrx/store-log-monitor
-* xx
+* fix ***/app.component.spec.ts*** 
+    * import MaterialModule
+    * add it to TestBed.configureTestingModule as **imports: []**
     
+* xx
